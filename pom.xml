@@ -151,11 +151,11 @@
   <distributionManagement>
       <repository>
       <id>nexus</id>
-     <url>${env.NEXUS_HOSTNAME}/repository/${env.NEXUS_REPO}</url>
+      <url>${env.NEXUS_HOSTNAME}/content/repositories/${env.NEXUS_REPO}</url>
       </repository>
         <snapshotRepository>
             <id>nexus</id>
-            <url>${env.NEXUS_HOSTNAME}/repository/${env.NEXUS_REPO}</url>
+	    <url>${env.NEXUS_HOSTNAME}/content/repositories/${env.NEXUS_REPO}</url>
         </snapshotRepository>
 </distributionManagement>
 </project>
