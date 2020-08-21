@@ -139,7 +139,7 @@ pipeline {
       emailext (attachLog: true, body: "${currentBuild.result}: ${BUILD_URL}", compressLog: true, 
                 subject: "Jenkins build back to normal: ${currentBuild.fullDisplayName}", 
               //  recipientProviders: [[$class: 'CulpritsRecipientProvider'],[$class: 'RequesterRecipientProvider']],
-                to: 'smandal@rythmos.com')
+                to: 'rvasamsetty@rythmos.com')
     }
     failure {
       // notify users when the Pipeline fails
@@ -147,14 +147,14 @@ pipeline {
                 body: "${currentBuild.result}: ${BUILD_URL}", compressLog: true, 
                 subject: "Build failed in Jenkins: ${currentBuild.fullDisplayName}", 
               //  recipientProviders: [[$class: 'CulpritsRecipientProvider'],[$class: 'RequesterRecipientProvider']],
-                to: 'smandal@rythmos.com')
+                to: 'rvasamsetty@rythmos.com')
     }
     unstable {
       // notify users when the Pipeline unstable
       emailext (attachLog: true, body: "${currentBuild.result}: ${BUILD_URL}", compressLog: true, 
                 subject: "Unstable Pipeline: ${currentBuild.fullDisplayName}", 
                // recipientProviders: [[$class: 'CulpritsRecipientProvider'],[$class: 'RequesterRecipientProvider']],
-                to: 'smandal@rythmos.com')
+                to: 'rvasamsetty@rythmos.com')
     }
   }
 }
