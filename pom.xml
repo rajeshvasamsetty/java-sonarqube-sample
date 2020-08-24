@@ -151,7 +151,6 @@
   <distributionManagement>
       <repository>
       <id>nexus</id>
-  #   <url>${env.NEXUS_HOSTNAME}/repository/${env.NEXUS_REPO}</url>
       <url>http://34.211.155.108:8081/repository/${env.NEXUS_REPO}</url>
       </repository>
         <snapshotRepository>
