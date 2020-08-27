@@ -151,11 +151,11 @@
   <distributionManagement>
       <repository>
       <id>nexus</id>
-      <url>http://18.237.178.13:8081/repository/${env.NEXUS_REPO}</url>
+      <url>http://35.166.40.73:8081/repository/${env.NEXUS_REPO}</url>
       </repository>
         <snapshotRepository>
             <id>nexus</id>
-            <url>http://18.237.178.13:8081/repository/${env.NEXUS_REPO}</url>
+            <url>http://35.166.40.73:8081/repository/${env.NEXUS_REPO}</url>
         </snapshotRepository>
 </distributionManagement>
 </project>
