@@ -147,7 +147,7 @@ pipeline {
                 body: "${currentBuild.result}: ${BUILD_URL}", compressLog: true, 
                 subject: "Build failed in Jenkins: ${currentBuild.fullDisplayName}", 
               //  recipientProviders: [[$class: 'CulpritsRecipientProvider'],[$class: 'RequesterRecipientProvider']],
-                to: 'rvasamsetty@rythmos.com')
+                to: 'smandal@rythmos.com')
     }
     unstable {
       // notify users when the Pipeline unstable
