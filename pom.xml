@@ -38,7 +38,6 @@
     <connection>scm:git:git@github.com:SonarQubeCommunity/sonar-issues-report.git</connection>
     <developerConnection>scm:git:git@github.com:SonarQubeCommunity/sonar-issues-report.git</developerConnection>
     <url>https://github.com/SonarQubeCommunity/sonar-issues-report</url>
-    <sonar.branch.name>feature-sonaruser-test</sonar.branch.name>
     <tag>HEAD</tag>
   </scm>
 
