@@ -11,20 +11,8 @@
   <name>Sonar :: Issues Report :: Plugin</name>
   <packaging>sonar-plugin</packaging>
   <description>Generate a report of SonarQube issues.</description>
-  <url>http://redirect.sonarsource.com/plugins/github.html</url>
+  <url>http://redirect.sonarsource.com/plugins/issues.html</url>
   
-    <properties>
-    <sonar.version>6.7</sonar.version>
-    <sonar.pluginName>GitHub</sonar.pluginName>
-    <sonar.pluginClass>org.sonar.plugins.github.GitHubPlugin</sonar.pluginClass>
-
-    <!-- used for deployment to SonarSource Artifactory -->
-    <gitRepositoryName>sonar-github</gitRepositoryName>
-    <!-- Release: enable publication to Bintray -->
-    <artifactsToPublish>${project.groupId}:${project.artifactId}:jar</artifactsToPublish>
-  </properties>
-
-
   <inceptionYear>2013</inceptionYear>
   <organization>
     <name>SonarSource</name>
@@ -58,18 +46,7 @@
     <url>https://github.com/SonarQubeCommunity/sonar-issues-report/issues</url>
   </issueManagement>
 
-    <repositories>
-    <!--
-    Unfortunately this is required because the transitive dependency org.jenkins-ci:jenkins:pom:1.26
-    is not available in Maven central repository:
-    org.kohsuke:github-api:jar:1.76 -> com.infradna.tool:bridge-method-annotation:jar:1.14 -> org.jenkins-ci:annotation-indexer:jar:1.4 -> org.jenkins-ci:jenkins:pom:1.26
-    -->
-    <repository>
-      <id>repo.jenkins-ci.org</id>
-      <url>http://repo.jenkins-ci.org/public/</url>
-    </repository>
-  </repositories>
-  
+ 
   <properties>
     <sonar.buildVersion>4.2</sonar.buildVersion>
     <maven.test.redirectTestOutputToFile>true</maven.test.redirectTestOutputToFile>
